@@ -18,7 +18,7 @@
 
       <loc>https://bmsstudconf.github.io/2019/index.html</loc>
 
-      <lastmod>2018-01-20</lastmod>
+      <lastmod>2019-01-20</lastmod>
 
       <changefreq>weekly</changefreq>
 
@@ -30,7 +30,7 @@
 
       <loc>https://bmsstudconf.github.io/2019/mobile.html</loc>
 
-      <lastmod>2018-01-17</lastmod>
+      <lastmod>2019-01-17</lastmod>
 
       <changefreq>weekly</changefreq>
 
@@ -116,7 +116,7 @@
 
       <loc>https://bmsstudconf.github.io/2019/registration.html</loc>
 
-      <lastmod>2018-01-17</lastmod>
+      <lastmod>2019-01-17</lastmod>
 
       <changefreq>weekly</changefreq>
 
@@ -126,7 +126,7 @@
 
       <loc>https://bmsstudconf.github.io/2019/updates.html</loc>
 
-      <lastmod>2018-01-20</lastmod>
+      <lastmod>2019-01-20</lastmod>
 
       <changefreq>weekly</changefreq>
 
@@ -136,7 +136,7 @@
 
       <loc>https://bmsstudconf.github.io/2019/venue.html</loc>
 
-      <lastmod>2018-01-17</lastmod>
+      <lastmod>2019-01-17</lastmod>
 
     </url>
 
@@ -144,39 +144,35 @@
 
       <loc>https://bmsstudconf.github.io/2019/poster.html</loc>
 
-      <lastmod>2018-01-20</lastmod>
+      <lastmod>2019-01-20</lastmod>
 
     </url>
 
-<!-- not updated yet
     <url>
 
       <loc>https://bmsstudconf.github.io/2019/booklet.html</loc>
 
-      <lastmod>2018-12-27</lastmod>
+      <lastmod>2019-01-20</lastmod>
 
       <changefreq>weekly</changefreq>
 
     </url>
--->
 
-<!-- not updated yet
     <url>
 
       <loc>https://bmsstudconf.github.io/2019/pictures.html</loc>
 
-      <lastmod>2018-12-27</lastmod>
+      <lastmod>2019-01-20</lastmod>
 
       <changefreq>monthly</changefreq>
 
     </url>
--->
 
     <url>
 
       <loc>https://bmsstudconf.github.io/2019/organization.html</loc>
 
-      <lastmod>2018-01-17</lastmod>
+      <lastmod>2019-01-17</lastmod>
 
       <changefreq>monthly</changefreq>
 
