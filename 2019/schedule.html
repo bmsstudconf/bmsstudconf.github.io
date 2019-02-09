@@ -15,77 +15,49 @@
     <!-- Custom styles for this template -->
     <link href="css/style_subpages.css" rel="stylesheet">
     <style>
-
 table{
   border-collapse: separate;
-
 }
 
-
-tr:nth-child(even) {
-    background-color: white;
-    text-align:center;
+/* Style all rows: entries are centered */
+tr:nth-child(1n) {
+  text-align: center;
 }
-
-tr:nth-child(odd) {
-    background-color: #99CEE4;
-    text-align: center;
-}
-
+/* The first row is the title row, hence styled differently. */
 tr:nth-child(1) {
     background-color: #0950A0;
     color: white;
     text-align: left;
 }
 
+/* Style the columns: the first is the title column. */
 td:nth-child(1) {
-    width: 12%;
+    width: 15%;
     background-color: #0950A0;
     color: white;
-    text-align: right;
+}
+td:not(:first-child) {
+  width: 29%;
 }
 
-tr:nth-child(6) {
-    background-color: brown;
-    color: white;
-    text-align: center;
+/* Finally, define a special style for the rows contains special events
+(coffee breaks, lunch breaks, invited talks and the social events). */
+#coffee_break1, #coffee_break2 {
+    background-color: #F7D358;#
+    /* last year: background-color: brown and color:white */
+}
+#lunch {
+  background-color: #FACC2E;
 }
 
-tr:nth-child(14) {
-    background-color: brown;
-    color: white;
-    text-align: center;
+#invited_speaker1, #invited_speaker2 {
+  background-color: yellow;
 }
 
-tr:nth-child(20) {
-    background-color: red;
-    color: white;
-    text-align: center;
-}
-
-tr:nth-child(17) {
-    background-color: green;
-    color: white;
-    text-align: center;
-}
-
-td:nth-child(1) {
-    width: 10%;
-    background-color: #0950A0;
-    color: white;
-    text-align: center;
-}
-
-td:nth-child(2) {
-    width: 30%;
-}
-
-td:nth-child(3) {
-    width: 30%;
-}
-
-td:nth-child(4) {
-    width: 30%;
+#social_event, #wine_and_cheese {
+  /* last year: social event in green, W&C in red */
+  background-color: green;
+  color: white;
 }
 </style>
   </head>
@@ -180,12 +152,12 @@ td:nth-child(4) {
         </tr>
         <tr>
           <td>11:30-12:00</td>
-          <td colspan="3">COFFEE/TEA/WHATEVER BREAK</td>
+          <td colspan="3" id="coffee_break1">Coffee break</td>
         </tr>
         <tr>
           <td>12:00-12:30</td>
           <td>Y&uuml;r&uuml;k</td>
-          <td rowspan="2" bgcolor="yellow">Martina<br>Junke-Kubitzke</td>
+          <td rowspan="2" id="invited_speaker1">Invited speaker<br>Junke-Kubitzke</td>
           <td>Codenotti</td>
         </tr>
         <tr>
@@ -196,7 +168,7 @@ td:nth-child(4) {
 
         <tr>
           <td>13:00-13:30</td>
-          <td rowspan="3" colspan="3" bgcolor="orange"><font size="10" color="white">LUNCH</font></td>
+          <td rowspan="3" colspan="3" id="lunch"><font size="5">Lunch break</font></td>
         </tr>
         <tr>
           <td>13:30-14:00</td>
@@ -208,7 +180,7 @@ td:nth-child(4) {
         <tr>
           <td>14:30-15:00</td>
           <td>Kreutzer</td>
-          <td rowspan="2">Olga<br>Holtz</td>
+          <td rowspan="2" id="invited_speaker2">Invited speaker<br>Holtz</td>
         </tr>
         <tr>
           <td>15:00-15:30</td>
@@ -216,7 +188,7 @@ td:nth-child(4) {
         </tr>
         <tr>
           <td>15:30-16:00</td>
-          <td colspan="2">COFFEE/TEA/WHATEVER BREAK</td>
+          <td colspan="2" id="coffee_break2">Coffee break</td>
         </tr>
         <tr>
           <td>16:00-16:30</td>
@@ -231,7 +203,7 @@ td:nth-child(4) {
         </tr>
         <tr>
           <td>17:00-17:30</td>
-          <td rowspan="3">Social activity:<br>Guided tour<br>to the<br>Tr&auml;nenpalast</td>
+          <td rowspan="3" bgcolor=green id=social_event><font size=5>Guided tour<br>to the Tr&auml;nenpalast</font></td>
         </tr>
         <tr>
           <td>17:30-18:00</td>
@@ -246,7 +218,7 @@ td:nth-child(4) {
         <tr>
           <td>19:00-19:30</td>
           <td></td>
-          <td rowspan="10" bgcolor="red"><font size="8">WINE</font><br>AND<br><font size="8">CHEESE</font></td>
+          <td rowspan="10" id=wine_and_cheese><font size=6>Wine<br> and<br>Cheese</font></td>
         </tr>
         <tr>
           <td>19:30-20:00</td>
