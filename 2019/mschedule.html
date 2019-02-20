@@ -22,6 +22,11 @@ table{
 tr:nth-child(1n) {
   text-align: center;
 }
+/* Make the first talk in each session stand out more clearly,
+to prevent all talks from melding to a giant mish-mash. */
+tr:nth-child(4), tr:nth-child(7), tr:nth-child(12), tr:nth-child(15) {
+  background-color: white;
+}
 /* The first row is the title row, hence styled differently. */
 tr:nth-child(1) {
     background-color: #0950A0;
@@ -178,7 +183,7 @@ td:not(:first-child) {
 
         <tr>
           <td>13:00<br>13:30</td>
-          <td rowspan="3" colspan="3" id="lunch">LUNCH</td>
+          <td rowspan="3" colspan="3" id="lunch"><font size=5>Lunch break</font></td>
         </tr>
         <tr>
           <td>13:30<br>14:00</td>
