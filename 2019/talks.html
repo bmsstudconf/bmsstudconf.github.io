@@ -151,11 +151,10 @@
           <h4>Tom Klose (TU Berlin)</h4>
           <p align="justify">
             We study the stochastic ordinary differential equation (SODE)
-              $$\begin{equation}
-                \dot{u}_{\varepsilon}(t) = -\nabla U(u_{\varepsilon}(t)) + \varepsilon\dot{w}(t), \quad
-                  			u_{\varepsilon}(0) \in B(\pm 1,\delta),
-                  			\label{eq:sde}\tag{AC}
-                  		\end{equation}$$
+              $$\begin{align}
+                \dot{u}_{\varepsilon}(t)& = -\nabla U(u_{\varepsilon}(t)) + \varepsilon\dot{w}(t), \tag{AC}\\
+                  			u_{\varepsilon}(0)& \in B(\pm 1,\delta),
+                  		\end{align}$$
             which is started in a small \(\delta\)-ball around \(+1\) or \(-1\), the stable equilibria of the <i>double-well potential</i> \(U(z) = \frac{1}{4}z^4 - \frac{1}{2} z^2\):
             <figure>
             <img src='images/double_well.png' alt='missing image' width=40%/><figcaption>The double-well potential \(U\).</figcaption>
@@ -184,9 +183,9 @@
           </p><p align="justify">
           	I will make the preceding statement precise and outline the strategy of proof. Time permitting, I will discuss how the recent breakthrough in the study of singular stochastic <i>partial</i> differential equations (SPDE) allows to &bdquo;tame infinities&ldquo; (Martin Hairer, Fields Medal 2014) using renormalisation techniques. We are then able to tackle the exponential loss of memory for the dynamic \(\Phi^4_3\) model <i>formally</i> given by the non-linear SPDE
             $$\begin{equation}
-          	 (\partial_t - \Delta) \Phi_{\varepsilon}(t,x) = -\nabla U(\Phi_{\varepsilon}(t,x))+ \varepsilon\xi(t,x), \quad (t,x) \in \mathbb{R}_+ \times \mathbb{T}^3,
-          		\tag{\(\Phi^4_3\)}
+          	 (\partial_t - \Delta) \Phi_{\varepsilon}(t,x) = -\nabla U(\Phi_{\varepsilon}(t,x))+ \varepsilon\xi(t,x),\tag{\(\Phi^4_3\)}
           	\end{equation}$$
+            \((t,x) \in \mathbb{R}_+ \times \mathbb{T}^3\),
           	which describes phase separation phenomena in statistical physics and serves as a toy model for Euclidean quantum field theory.
             </p><p align="justify">
               The latter is joint work in progress with Pavlos Tsatsoulis (MPI Leipzig).
