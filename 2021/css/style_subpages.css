@@ -14,6 +14,9 @@ body {
   padding: 0.05px;
   width: auto;
 }
+img{
+  border-radius: 15px;
+}
 
 .navbar-default {
   background-color:teal;
