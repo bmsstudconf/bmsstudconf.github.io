@@ -5,6 +5,9 @@ background-color : #99CEE4;
 body {
   padding-top: 2rem;
 }
+img{
+  border-radius: 15px;
+}
 
 .navbar-brand {
   padding: 0px;
