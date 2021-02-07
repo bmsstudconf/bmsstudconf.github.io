@@ -65,6 +65,14 @@ input[type=submit] {
  
   line-height: 30px;
 }
+#zama1{background-color: powderblue;
+  width: 93%;
+  border: 10px;
+  padding: 1cm;
+  margin-top: 3%; 
+ 
+  line-height: 30px;
+}
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
