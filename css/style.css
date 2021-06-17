@@ -23,25 +23,25 @@ body {
 
 .navbar-custom {
     color: #FFFFFF;
-    background-color: #0950A0;
+    background-color: #00727D;
 }
 
 
-.navbar-nav > li > .dropdown-menu { background-color:  #0950A0; }
+.navbar-nav > li > .dropdown-menu { background-color:  #00727D; }
 
  .navbar-nav > li > .dropdown-menu a{   color: #FFFFFF;  }
 
 .navbar-nav > li > .dropdown-menu a:hover{background-color: #0000CD;}
 
 .btn-primary, .btn-primary:active, .btn-secondary, .btn-secondary:active{
-	background-color: #0950A0  !important;
-	border-color : #0950A0 !important;
+	background-color: #00727D  !important;
+	border-color : #00727D !important;
 	color: white !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-secondary:hover, .btn-secondary:focus{
     background-color: #99CEE4 !important;
-		border-color: #0950A0 !important;
+		border-color: #00727D !important;
 		color: black !important;
 }*/
  
