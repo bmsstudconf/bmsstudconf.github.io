@@ -23,50 +23,77 @@ table{
 tr:nth-child(1n) {
   text-align: center;
 }
-/* Make the first talk in each session stand out more clearly,
-to prevent all talks from melding to a giant mish-mash. */
-tr:nth-child(4), tr:nth-child(7), tr:nth-child(12), tr:nth-child(15) {
-  background-color: white;
-}
 /* The first row is the title row, hence styled differently. */
 tr:nth-child(1) {
-    background-color: #0950A0;
+    background-color: #005158;
     color: white;
     text-align: left;
 }
- 
+
 /* Style the columns: the first is the title column. */
 td:nth-child(1) {
-    width: 10%;
-    background-color: #0950A0;
+    width: 15%;
+    background-color: #00727d;
     color: white;
 }
 td:not(:first-child) {
-  width: 30%;
+  width: 29%;
 }
 
 /* Finally, define a special style for the rows contains special events
 (coffee breaks, lunch breaks, invited talks and the social events). */
 #coffee_break1, #coffee_break2 {
-    background-color: tomato;
-    /* last year: background-color: brown and color:white */
+    background-color: #6F4E37;
+	color: white;
 }
 #lunch {
   background-color: #FACC2E;
 }
 
 #invited_speaker1, #invited_speaker2 {
-  background-color: violet;
+  background-color: #EE7733;
+  color: white;
 }
 
-#social_event, #wine_and_cheese {
+#social_event {
+	background-color: green;
+	color: white;
+}
+
+
+#wine_and_cheese {
   /* last year: social event in green, W&C in red */
-  background-color: green;
+  background-color: #c50e1f;
   color: white;
 }
+
 #registration1, #registration2, #introduction {
-  background-color: grey;
+  background-color: #717171;
   color: white;
+}
+
+a:link {
+  color: #005158;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #005158;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c50e1f;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #FACC2E;
+  background-color: transparent;
+  text-decoration: underline;
 }
 </style>
   </head>
@@ -110,17 +137,17 @@ td:not(:first-child) {
       </div></center>
     </div>
 	
-	<div class="container"> <!--
+	<div class="container">
       <div class="row">
         <div class="col-md-12">
           
         </div>
-      </div>
+      </div><!--
       <div>
           <p align="center">
             <a href="images/schedule_2021.pdf">Download in PDF</a>
-          </p>
-        </div>
+          </p> 
+        </div>-->
       <div class="row">
         <div class="col-md-12">
    
@@ -132,128 +159,99 @@ td:not(:first-child) {
           <th><center>Friday 25th</center></th>
         </tr>
         <tr>
-          <td>09:50-10:00</td>
-          <td id=registration1>Welcome</td>
-        <tr>
-          <td>10:00-10:25</td>
-          <td><a href="talks.html#Shah">Faisal</a></td>
-          <td><a href="talks.html#Naageswaran">Manikandan</a></td>
-          <td><a href="talks.html#Sophie">Rehberg</a></td>
+          <td>10:00-10:30</td>
+          <td></td>
+          <td><a href="talks.html#Abel">Abel</a></td>
+          <td><a href="talks.html#Boyadzhiyska">Boyadzhiyska</a></td>
         </tr>
         <tr>
-          <td>10:30-10:55</td>
-          <td><a href="talks.html#Milica">Ðukić</a></td>
-          <td><a href="talks.html#Shpresim">Sadiku</a></td>
-          <td><a href="talks.html#Arturo">Merino</a></td>
+          <td>10:30-11:00</td>
+          <td></td>
+          <td><a href="talks.html#Ertel">Ertel</a></td>
+          <td><a href="talks.html#Rapsch">Rapsch</a></td>
         </tr>
         <tr>
-          <td>11:00-11:25</td>
-          <td rowspan="2" colspan="3" id="coffee_break1">Coffee break</td>
+          <td>11:00-11:30</td>
+          <td></td>
+          <td><a href="talks.html#Perez">Perez</a></td>
+          <td><a href="talks.html#Morandin">Morandin</a></td>
         </tr>
       <tr>
-          <td>11:25-11:55</td>
+          <td>11:30-12:00</td>
+		  <td></td>
+		  <td rowspan="1" colspan="2" id="coffee_break1">Coffee break</td>
         </tr>
         <tr>
-          <td>12:00-12:25</td>
-          <td rowspan="2" id="invited_speaker1">Invited speaker<br><a href="talks.html#Luzatto">Prof. Cederbaum</a></td>
-          <td rowspan="2" id="invited_speaker2">Invited speaker<br><a href="talks.html#Barbara">Prof. Zwicknagl</a></td>
-          <td><a href="talks.html#Branislav">Šobot</a></td>
+          <td>12:00-12:30</td>
+		  <td></td>
+          <td rowspan="2" id="invited_speaker1">Invited speaker<br><a href="talks.html#Wendl">Prof. Wendl</a></td>
+          <td><a href="talks.html#Polzin">Polzin</a></td>
           
         </tr>
         <tr>
-          <td>12:30-12:55</td>
-           <td><a href="talks.html#Candan">Güdücü</a></td>
+          <td>12:30-13:00</td>
+		  <td id="registration1">Welcome</td>
+          <td><a href="talks.html#Koser">Koser</a></td>
         </tr>
 
         <tr>
           <td>13:00-13:30</td>
-          <td rowspan="3" colspan="3" id="lunch"><font size="5">Lunch break</font></td>
+		  <td><a href="talks.html#Fairley">Fairley</a></td>
+          <td rowspan="2" colspan="2" id="lunch"><font size="5">Lunch break</font></td>
         </tr>
         <tr>
           <td>13:30-14:00</td>
+		  <td><a href="talks.html#Bergold">Bergold</a></td>
         </tr>
         <tr>
-          <td>14:00-14:25</td>
+          <td>14:00-14:30</td>
+		  <td rowspan="2" id="lunch">Lunch Break</td>
+		  <td><a href="talks.html#Luber">Luber</a></td>
+		  <td><a href="talks.html#Gladin">Gladin</a></td>
         </tr>
 
         <tr>
-          <td>14:30-14:55</td>
-          <td><a href="talks.html#Amelie">Flatt</a></td>
-          <td><a href="talks.html#Sven">Tornquist</a></td>
-          <td><a href="talks.html#Lukas">Wessels</a></td>
+          <td>14:30-15:00</td>
+          <td><a href="talks.html#Rothgang">Rothgang</a></td>
+          <td><a href="talks.html#Chemnitz">Chemnitz</a></td>
         </tr>
-        <tr>
-          <td>15:00-15:25</td>
-          <td><a href="talks.html#Marco">Flores</a></td>
-          <td><a href="talks.html#Olha">Shevchenko</a></td>
-          <td>Closing</td>
+        
+		<tr>
+          <td>15:00-15:30</td>
+          <td><a href="talks.html#Pesic">Pešić</a></td>
+          <td></td>
+          <td id="introduction">Closing</td>
         </tr>
           
         <tr>
-          <td>15:30-15:55</td>
-          <td rowspan="2" colspan="2" id="coffee_break2">Coffee break</td>
+          <td>15:30-16:00</td>
+          <td><a href="talks.html#Zahoransky">Zahoransky von Worlik</a></td>
         </tr>
-<tr>
-          <td>16:00-16:25</td>
+		
+		<tr>
+          <td>16:00-16:30</td>
+		  <td><a href="talks.html#Gardiner">Gardiner</a></td>
+        </tr>
+        
+		<tr>
+          <td>16:30-17:00</td>
+		  <td id="coffee_break1">Coffee Break</td>
         </tr>
         <tr>
-          <td>16:30-16:55</td>
-          <td><a href="talks.html#Mazyar">Ghani Varzaneh</a></td>
-           <td><a href="talks.html#Patrick">Morris</a></td>
-
-        </tr>
-        <tr>
-          <td>17:00-17:25</td>
-          <td><a href="talks.html#Paul">Hager</a></td>
-           <td><a href="talks.html#Yizheng">Yuan</a></td>
+          <td>17:00-17:30</td>
+		  <td rowspan="2" id="invited_speaker1">Invited speaker<br><a href="talks.html#Schroeder">Prof. Schröder</a></td>
         </tr>
       
         <tr>
-          <td>18:00-18:30</td>
+          <td>17:30-18:00</td>
         </tr>
 
-        <tr>
-          <td>18:30-19:00</td>
-        </tr>
-        <tr>
-          <td>19:00-19:30</td>
-          <td></td>
-          <td rowspan="10" id=wine_and_cheese><font size=6>Wine<br> and<br>Cheese</font></td>
-        </tr>
-        <tr>
-          <td>19:30-20:00</td>
-        </tr>
-        <tr>
-          <td>20:00-20:30</td>
-        </tr>
-        <tr>
-          <td>20:30-21:00</td>
-        </tr>
-        <tr>
-          <td>21:00-21:30</td>
-        </tr>
-        <tr>
-          <td>21:30-22:00</td>
-        </tr>
-        <tr>
-          <td>22:00-22:30</td>
-        </tr>
-        <tr>
-          <td>22:30-23:00</td>
-        </tr>
-        <tr>
-          <td>23:00-23:30</td>
-        </tr>
-        <tr>
-          <td>23:30-24:00</td>
-        </tr>
         </table>
 
          
         </div>
       </div>
 
-		-->
       <hr>
 
       <footer>
