@@ -1,12 +1,9 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 html body{
-background-color : #bed600;
+background-color :#bed600;
 }
 body {
   padding-top: 2rem;
-}
-img{
-  border-radius: 0px;
 }
 
 .navbar-brand {
@@ -17,9 +14,12 @@ img{
   padding: 0.05px;
   width: auto;
 }
+img{
+  border-radius: 0px;
+}
 
 .navbar-default {
-  background-color:green;
+  background-color:teal;
   background-image: none;
   background-repeat: no-repeat;
  }
@@ -29,24 +29,11 @@ img{
     background-color:   #00727d;
 }
 
-
-.navbar-nav > li > .dropdown-menu { background-color:  #00727d; }
+.navbar-nav > li > .dropdown-menu { background-color:   #00727d; }
 
  .navbar-nav > li > .dropdown-menu a{   color: #FFFFFF;  }
 
 .navbar-nav > li > .dropdown-menu a:hover{background-color: #0000CD;}
-
-.btn-primary, .btn-primary:active, .btn-secondary, .btn-secondary:active{
-	background-color: #00727d  !important;
-	border-color : #00727d !important;
-	color: white !important;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-secondary:hover, .btn-secondary:focus{
-    background-color: #bed600 !important;
-		border-color: #00727d !important;
-		color: #00727d !important;
-}*/
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -69,6 +56,7 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
+
 #zama{background-color: #ebf3b3;
   width: 93%;
   border: 10px;
