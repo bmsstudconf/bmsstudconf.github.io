@@ -5,7 +5,7 @@
     <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="2020 BMS Student Conference organizers">
+    <meta name="author" content="2023 BMS Student Conference organizers">
     <link rel="icon" href="../imgs/BMS-logo.png">
 
     <title>Schedule</title>
@@ -22,6 +22,11 @@
       /* Style all rows: entries are centered */
       tr:nth-child(1n) {
         text-align: center;
+      }
+      /* Make the first talk in each session stand out more clearly,
+      to prevent all talks from melding to a giant mish-mash. */
+      tr:nth-child(4), tr:nth-child(7), tr:nth-child(12), tr:nth-child(15) {
+        background-color: white;
       }
       /* The first row is the title row, hence styled differently. */
       tr:nth-child(1) {
@@ -105,6 +110,7 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <a class="navbar-brand" href="index.html"><img src="images/rsz_bms_icon_rgb.png"></a>
       <a class="navbar-brand" href="index.html"><img src="../imgs/BMS-logo.png"></a>
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
@@ -162,45 +168,50 @@
         <table style="width:100%">
         <tr>
           <th></th>
-          <th><center>Wednesday 19th</center></th>
-          <th><center>Thursday 20th</center></th>
-          <th><center>Friday 21st</center></th>
+          <th><center>Wednesday 23rd</center></th>
+          <th><center>Thursday 24th</center></th>
+          <th><center>Friday 25th</center></th>
         </tr>
+        
         <tr>
           <td>09:30-09:55</td>
           <td id=registration1>Registration</td>
           <td id=registration2>Registration</td>
         <tr>
+        <tr>
           <td>10:00-10:30</td>
-          <td>Boyadzhiyska</td>
-          <td>Levinson</td>
-          <td>Stephan</td>
+          <td></td>
+          <td><a href="talks.html#Abel">Abel</a></td>
+          <td><a href="talks.html#Boyadzhiyska">Boyadzhiyska</a></td>
         </tr>
         <tr>
           <td>10:30-11:00</td>
-          <td>Lopez</td>
-          <td>Chaudhuri</td>
-          <td>Merino</td>
+          <td></td>
+          <td><a href="talks.html#Ertel">Ertel</a></td>
+          <td><a href="talks.html#Rapsch">Rapsch</a></td>
         </tr>
         <tr>
           <td>11:00-11:30</td>
-          <td>Wei</td>
-          <td>Rothgang</td>
-          <td>Milbradt</td>
+          <td></td>
+          <td><a href="talks.html#Perez">Perez</a></td>
+          <td><a href="talks.html#Morandin">Morandin</a></td>
         </tr>
-        <tr>
+      <tr>
           <td>11:30-12:00</td>
-          <td colspan="3" id="coffee_break1">Coffee break</td>
+		  <td></td>
+		  <td rowspan="1" colspan="2" id="coffee_break1">Coffee break</td>
         </tr>
         <tr>
           <td>12:00-12:30</td>
-          <td rowspan="2" id="invited_speaker1">Invited speaker<br>Bürgisser</td>
-          <td>Padilla</td>
-          <td rowspan="2" id="invited_speaker2">Invited speaker<br>Luzzatto</td>
+		  <td></td>
+          <td rowspan="2" id="invited_speaker1">Invited speaker<br><a href="talks.html#Wendl">Prof. Wendl</a></td>
+          <td><a href="talks.html#Polzin">Polzin</a></td>
+          
         </tr>
         <tr>
           <td>12:30-13:00</td>
-          <td>Hegab </td>
+		  <td id="registration1">Welcome</td>
+          <td><a href="talks.html#Koser">Koser</a></td>
         </tr>
 
         <tr>
@@ -216,31 +227,34 @@
 
         <tr>
           <td>14:30-15:00</td>
-          <td>Fairley</td>
-          <td>Grabs</td>
-          <td>Closing of the Conference</td>
+          <td><!--<a href="talks.html#Rothgang">Rothgang</a>--></td>
+          <td><a href="talks.html#Chemnitz">Chemnitz</a></td>
         </tr>
-        <tr>
+        
+		<tr>
           <td>15:00-15:30</td>
-          <td>Rehfeldt</td>
-          <td>Müyesser</td>
+          <td><a href="talks.html#Pesic">Pešić</a></td>
+          <td><!--<a href="talks.html#Gardiner">Gardiner</a>--></td>
+          <td id="introduction">Closing</td>
         </tr>
+          
         <tr>
           <td>15:30-16:00</td>
-          <td colspan="2" id="coffee_break2">Coffee break</td>
-        </tr>
-        <tr>
-          <td>16:00-16:30</td>
           <td rowspan="4" bgcolor=green id="social_event"><font size="5">Social Event</font><br><font size="2">We are meeting in front of TU Math building. Please purchase public transport ticket in advance.</font></br></td>
-          <td>Comaneci</td>
+          <td rowspan="2" id="coffee_break1">Coffee break</td>
+          <td><a href="talks.html#Zahoransky">Zahoransky von Worlik</a></td>
         </tr>
-
-        <tr>
+		
+		    <tr>
+          <td>16:00-16:30</td>
+        </tr>
+        
+		    <tr>
           <td>16:30-17:00</td>
-          <td>Schröder</td>
         </tr>
         <tr>
           <td>17:00-17:30</td>
+		      <td rowspan="2" id="invited_speaker1">Invited speaker<br><a href="talks.html#Schroeder">Prof. Schröder</a></td>
         </tr>
         <tr>
           <td>17:30-18:00</td>
@@ -294,7 +308,7 @@
       <hr>
 
       <footer>
-        <p>&copy;2020 8th BMS Student Conference Organizers</p>
+        <p>&copy;2023 11th BMS Student Conference Organizers</p>
       </footer>
     </div> <!-- /container -->
 
