@@ -26,11 +26,11 @@
       /* Make the first talk in each session stand out more clearly,
       to prevent all talks from melding to a giant mish-mash. */
       tr:nth-child(4), tr:nth-child(7), tr:nth-child(12), tr:nth-child(15) {
-        background-color: white;
+        background-color:#F597DA;
       }
       /* The first row is the title row, hence styled differently. */
       tr:nth-child(1) {
-          background-color: #005158;
+          background-color: #502A34;
           color: white;
           text-align: left;
       }
@@ -38,7 +38,7 @@
       /* Style the columns: the first is the title column. */
       td:nth-child(1) {
           width: 15%;
-          background-color: #00727d;
+          background-color: #603140;
           color: white;
       }
       td:not(:first-child) {
@@ -52,7 +52,7 @@
         color: white;
       }
       #lunch {
-        background-color: #FACC2E;
+        background-color: #CF188F;
       }
       
       #invited_speaker1, #invited_speaker2 {
@@ -73,7 +73,7 @@
       }
       
       #registration1, #registration2, #introduction {
-        background-color: #717171;
+        background-color: #866D56;
         color: white;
       }
       
@@ -181,25 +181,28 @@
         <tr>
         <tr>
           <td>09:30 - 10:00 </td>
-          <td rowspan="3" id="invited_speaker1">Invited speaker<br><a href="talks.html#Thomas">Prof. Thomas</a></td>
+          <td><a href="talks.html#Faisal">Faisal</a></td>
           <td rowspan="3" id="invited_speaker1">Invited speaker<br><a href="talks.html#Swaminathan">Prof. Swaminathan</a></td>
+          <td><a href="talks.html#Sadovek">Sadovek</a></td>  
           <td></td>
         </tr>
         <tr>
           <td>10:00-10:30</td>
-          <td><a href="talks.html#Majewski">Majewski </a></td>
+          <td><a href="talks.html#Rothgang">Rothgang</a></td>
+          <td><a href="talks.html#Majewski">Majewski</a></td>  
         </tr>
         <tr>
           <td>10:30-11:00</td>
+          <td><a href="talks.html#Rehberg">Rehberg</a></td>
           <td><a href="talks.html#Ergen">Ergen</a></td>
         </tr>
         <tr>
           <td>11:00-11:30</td>
-		      <td rowspan="1" colspan="3" id="coffee_break1">Coffee break & Speakers answering questions</td>
+		      <td rowspan="1" colspan="3" id="coffee_break1">Coffee break & Speaker answering questions</td>
         </tr>
         <tr>
           <td>11:30-12:00</td>
-		      <td><a href="talks.html#Sadovek">Sadovek</a></td>
+		      <td><a href="talks.html#Figueroa">Figueroa-Alvarez</a></td>
           <td><a href="talks.html#Manikandan">Manikandan  </a></td>
           <td><a href="talks.html#Pesic">Pesic</a></td>
         </tr>
@@ -212,7 +215,8 @@
         <tr>
           <td>12:30-13:00</td>
           <!--<td rowspan="3" colspan="1" id="lunch"><font size="5">Poster session (and Lunch afterwards)</font></td>-->
-          <td rowspan="3" colspan="3" id="lunch"><font size="5">Lunch break</font></td>
+          <td rowspan="3" colspan="2" id="lunch"><font size="5">Lunch break</font></td>
+          <td id="introduction">Closing</td>
         </tr>
         <tr>
           <td>13:00-13:30</td>
@@ -222,28 +226,27 @@
         </tr>
         <tr>
           <td>14:00-14:30</td>
-          <td><a href="talks.html#Faisal">Faisal</a></td>
+          <td rowspan="3" id="invited_speaker1">Invited speaker<br><a href="talks.html#Thomas">Prof. Thomas</a></td>
           <td><a href="talks.html#Bögel">Bögel</a></td>
-          <td><a href="talks.html#Figueroa">Figueroa-Alvarez</a></td>
+          
         </tr>
 		    <tr>
           <td>14:30 - 15:00 </td>
-          <td><a href="talks.html#Rothgang">Rothgang</a></td>
           <td><a href="talks.html#Kipp">Kipp</td>
-          <td id="introduction">Closing</td>
+          
         </tr>
           
         <tr>
           <td>15:00-15:30</td>
            <td id="coffee_break2">Coffee break</td>
-           <td id="coffee_break2">Coffee break</td>
+           
           <!-- <td id="introduction">Closing</td> -->
         </tr>
 		
 		    <tr>
           <td>15:30-16:00</td>
-          <td><a href="talks.html#Rehberg">Rehberg</a></td>
-	  <td><a href="talks.html#Okunola">Okunola</a></td>
+          <td id="coffee_break2">Coffee break</td>
+          <td><a href="talks.html#Okunola">Okunola</a></td>
         </tr>
         
 		    <tr>
