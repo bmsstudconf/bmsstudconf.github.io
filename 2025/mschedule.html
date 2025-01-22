@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="2025 BMS Student Conference organizers">
+    <link rel="icon" href="../imgs/BMS-logo.png">
+
+    <title>Schedule</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style_subpages.css" rel="stylesheet">
+    <style>
+table{
+  border-collapse: separate;
+}
+/* Style all rows: entries are centered */
+tr:nth-child(1n) {
+  text-align: center;
+}
+/* Make the first talk in each session stand out more clearly,
+      to prevent all talks from melding to a giant mish-mash. */
+      /*
+      tr:nth-child(4), tr:nth-child(7), tr:nth-child(12), tr:nth-child(15) {
+        background-color:#F597DA;
+      }*/
+      /* The first row is the title row, hence styled differently. */
+      /*tr:nth-child(1) {
+          background-color: #502A34;
+          color: white;
+          text-align: left;
+}*/
+
+
+/* Style the columns: the first is the title column. */
+td:nth-child(1) {
+          width: 15%;
+          background-color: #603140;
+          color: white;
+      }
+      td:not(:first-child) {
+        width: 29%;
+      }
+      
+/* Finally, define a special style for the rows contains special events
+(coffee breaks, lunch breaks, invited talks and the social events). */
+      #coffee_break1, #coffee_break2 {
+          background-color: #6F4E37;
+        color: white;
+      }
+      #lunch {
+        background-color: #CF188F;
+      }
+
+      #invited_speaker1, #invited_speaker2 {
+        background-color: #EE7733;
+        color: white;
+      }
+      
+      #social_event {
+        background-color:  #52be80;
+        color: white;
+      }
+
+      #career_event {
+        background-color:  #bb8fce;
+        color: white;
+      }
+      
+      #wine_and_cheese {
+        /* last year: social event in green, W&C in red */
+        background-color:  #cd6155 ;
+        color: white;
+      }
+      
+      #registration1, #registration2, #introduction {
+        background-color: #866D56;
+        color: white;
+      }
+      
+      a:link {
+        color: #005158;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:visited {
+        color: #005158;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color: #c50e1f;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      
+      a:active {
+        color: #FACC2E;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      
+
+</style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top navbar-custom">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="images/rsz_bms_icon_rgb.png"/></a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="invited_speakers.html">Invited speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="talks.html">Talks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="schedule.html">Schedule <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="venue.html">Venue</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registration.html">Registration</a>
+          </li>
+
+          <!--<li class="nav-item">
+            <a class="nav-link" href="booklet.html">Booklet</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link" href="poster.html">Poster</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="organization.html">Organization</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pictures.html">Pictures</a>
+          </li>
+        </ul>
+        <!--<form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>-->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Schedule</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p align="justify">
+            The talks of the conference will take place at the lecture hall <b>H0111</b>, the Wine and Cheese event will be at <b>H1035</b> . 
+            Both are at the Main Building of the Technische Universit&aumlt Berlin, at Str. des 17. Juni 135.
+            More information about the location can be found on the <a href="venue.html">venue page</a>.
+            There will be an introduction to the conference on the first day of the conference fifteen minutes before the first talk.
+          </p>
+        </div>
+      </div>
+     <div>
+          <center><h1>Schedule</h1></center>
+          <p align="center">
+            <!--<a href="images/schedule_2020.pdf">Download Schedule Here</a>--><!--The schedule will be published here as soon as it is finalized.-->
+          </p>
+        </div>
+      <div class="row">
+        <div class="col-md-12">
+        <table style="width:100%">
+        <tr>
+          <th></th>
+          <th><center>Wednesday 19th</center></th>
+          <th><center>Thursday 20th</center></th>
+          <th><center>Friday 21st</center></th>
+        </tr>
+        
+        <tr>
+          <td>09:00-09:30</td>
+          <td id=registration1>Registration & Welcome</td>
+          <td id=registration2>Registration</td>
+        <tr>
+        <tr>
+          <td>09:30 - 10:00 </td>
+          <td rowspan="3" id="invited_speaker1">Invited speaker<br><a href="talks.html#Totzeck">Prof. Totzeck</a></td>
+          <td rowspan="3" id="invited_speaker1">Invited speaker<br><a href="talks.html#Thomas">Prof. Thomas</a></td>
+          <td><a href="talks.html">Spot 10</a></td>
+        </tr>
+        <tr>
+          <td>10:00-10:30</td>
+          <td><a href="talks.html">Spot 11</a></td>
+        </tr>
+        <tr>
+          <td>10:30-11:00</td>
+          <td><a href="talks.html">Spot 12</a></td>
+        </tr>
+        <tr>
+          <td>11:00-11:30</td>
+		      <td rowspan="1" colspan="3" id="coffee_break1">Coffee break & Speakers answering questions</td>
+        </tr>
+        <tr>
+          <td>11:30-12:00</td>
+		      <td><a href="talks.html">Spot 1</a></td>
+          <td><a href="talks.html">Spot 5</a></td>
+          <td><a href="talks.html">Spot 13</a></td>
+        </tr>
+        <tr>
+          <td>12:00-12:30</td>
+		      <td><a href="talks.html">Spot 2</a></td>
+          <td><a href="talks.html">Spot 6</a></td>
+          <td id="introduction">Closing</td>
+        </tr>
+        <tr>
+          <td>12:30-13:00</td>
+          <!--<td rowspan="3" colspan="1" id="lunch"><font size="5">Poster session (and Lunch afterwards)</font></td>-->
+          <td rowspan="3" colspan="3" id="lunch"><font size="5">Lunch break</font></td>
+        </tr>
+        <tr>
+          <td>13:00-13:30</td>
+        </tr>
+        <tr>
+          <td>13:30-14:00</td>
+        </tr>
+        <tr>
+          <td>14:00-14:30</td>
+          <td><a href="talks.html">Spot 3</a></td>
+          <td><a href="talks.html">Spot 7</a></td>
+          <td rowspan="4" bgcolor="#a569bd" id="career_event"><a href="events.html#career-event"><font size=6>Career Event</font></a></td>
+        </tr>
+		    <tr>
+          <td>14:30 - 15:00 </td>
+          <td><a href="talks.html">Spot 4</td>
+          <td><a href="talks.html">Spot 8</td>
+        </tr>
+          
+        <tr>
+          <td>15:00-15:30</td>
+           <td rowspan="6" id="social_event"><a href="events.html#outing"><font size=6>Outing</font></a></td>
+           <td id="coffee_break2">Coffee break</td>
+        </tr>
+		
+		    <tr>
+          <td>15:30-16:00</td>
+          <td><a href="talks.html">Spot 9</a></td>
+        </tr>
+        
+		    <tr>
+          <td>16:00-16:30</td>
+          <td></td>
+          <td id="introduction">Discussion & Finger food</td>
+        </tr>
+        <tr>
+          <td>16:30 - 17:00 </td>
+        </tr>
+        <tr>
+          <td>17:00-17:30</td>
+        </tr>
+        <tr>
+          <td>17:30 - 18:00 </td>
+          <td rowspan="7" id=wine_and_cheese><a href="events.html#wine-and-cheese"><font size=6>Wine<br> and<br>Cheese</font></a></td>
+          <!-- <td></td> -->
+        </tr>
+
+        <tr>
+          <td>18:00-18:30</td>
+          <td rowspan="7" id="social_event"><a href="events.html#outing"><font size=6>Nights<br>out</font></a></td>
+          </td>
+
+        </tr>
+        <tr>
+          <td>18:30 - 19:00 </td>
+          
+        </tr>
+        <tr>
+          <td>19:00-19:30</td>
+        </tr>
+        <tr>
+          <td>19:30-20:00</td>
+        </tr>
+        <tr>
+          <td>20:00-20:30</td>
+        </tr>
+        <tr>
+          <td>20:30-21:00</td>
+        </tr>
+        <tr>
+          <td>21:30-22:00</td>
+        </tr>
+              
+        </table>
+
+          
+      
+        </div>
+      </div>
+      
+      <hr>
+
+      <footer>
+      <p>&copy;2025 13th BMS Student Conference Organizers</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

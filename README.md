@@ -21,12 +21,13 @@ The following things need to be updated each year. Those marked with a _(!)_ wil
 ## Blocks of text 
 - (!) *Short summaries on the home page.* Currently these include some updates, schedule, venue, poster, organizers, and the pictures.
 - (!) *Short introduction of the invited speakers.* Make sure to ask for their consent before making these public!
-- (!) *Title, description of social event.*
+- (!) *Titles, absrtacts of talks.* Don't forget consent! And to later upload the videos too.
+- (!) *Title, description of social event(s), Wine and Cheese.*
 - (!) *Schedule.*
 - (!) *Name precise room of the conference.* Make sure to also update the "how to get here" part with possible reconstruction infos, and check if the named cafeterias are indeed open and priced as claimed.
-- (!) *Description of Wine and Cheese.*
 - *List of organizers.*
 
 ## Other
 - (!) *Add registration link.* Make sure to announce the opening and closing of the registration in the "updates" section(s).
-- (!) *Add poster.* Take a smaller screenshot of it so the preview can load fast. Should be made available on `poster.html` and on the home pages.
+- *Add poster.* Take a smaller screenshot of it so the preview can load fast. Should be made available on `poster.html` and on the home pages.
+- *Upload pictures taken at the conference.*
