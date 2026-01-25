@@ -4,6 +4,7 @@ background-color : #EBDDC6ff;
 }
 body {
   padding-top: 2rem;
+	text-align: left !important;
 }
 img{
   border-radius: 0px;
