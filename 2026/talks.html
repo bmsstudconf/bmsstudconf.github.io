@@ -17,16 +17,12 @@
     <link href="css/style_subpages.css" rel="stylesheet">
   </head>
 
-  <!-- When scrolling (see hack below), make the navigation bar hide and show smoothly. 
-  <style>
-  #navbar { transition: top 0.3s; }
-  </style> -->
   <body>
-    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top navbar-custom">
+    <nav id="navbar" class="navbar navbar-toggleable-md navbar-inverse fixed-top navbar-custom">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="index.html"><img src="images/rsz_bms_icon_rgb.png"></a>
+      <a class="navbar-brand" href="index.html"><img src="images/rsz_bms_icon_rgb.png" alt="BMS"></a>
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
@@ -54,9 +50,6 @@
           <li class="nav-item">
             <a class="nav-link" href="poster.html">Poster</a>
           </li>
-          <!--<li class="nav-item">
-            <a class="nav-link" href="booklet.html">Booklet</a>
-          </li>-->
           <li class="nav-item">
             <a class="nav-link" href="organization.html">Organization</a>
           </li>
@@ -64,200 +57,193 @@
             <a class="nav-link" href="pictures.html">Pictures</a>
           </li>
         </ul>
-        <!--<form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>-->
       </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <!-- Main jumbotron -->
     <div class="jumbotron">
       <div class="container">
         <h1>Talks</h1>
       </div>
     </div>
+
     <div class="container">
       <div class="row">
         <div class="col-md-12">
+
           <p align="justify">
-            The students talks displayed in this page are ordered by alphabetical order of the speakers, with respect to their first names. 
-            See their <a href="schedule.html">schedule</a> and <a href="venue.html">venue</a> on the linked pages.
+            The student talks displayed on this page are ordered alphabetically by the speakers' first names.
+            See the <a href="schedule.html">schedule</a> and <a href="venue.html">venue</a> on the linked pages.
           </p>
-           
-          <p align="justify"> 
-            Our conference featured talks from three invited speakers and 13 student speakers:
+
+          <p align="justify">
+            Our conference features plenary talks from three invited speakers and student talks:
           </p>
 
           <ul>
-  <li><a href="#AnaDamnjanovic">Ana Damnjanovi&#263; (FU Berlin)</a></li>
-  <li><a href="#AndreiBalakin">Andrei Balakin (TU Berlin)</a></li>
-  <li><a href="#BalintZsigri">B&aacute;lint Zsigri (TU Berlin)</a> <span class="badge badge-warning">Abstract pending</span></li>
-  <li><a href="#ChunShengHsueh">Chun-Sheng Hsueh (HU Berlin)</a></li>
-  <li><a href="#EliaImmanuelAuer">Elia Immanuel Auer (FU Berlin)</a> <span class="badge badge-warning">Abstract pending</span></li>
-  <li><a href="#FatemehZeinabadi">Fatemeh Zeinabadi (FU Berlin)</a> <span class="badge badge-warning">Abstract pending</span></li>
-  <li><a href="#FawzyNaguibHegab">Fawzy Naguib Hegab (HU Berlin)</a> <span class="badge badge-warning">Abstract pending</span></li>
-  <li><a href="#GeorgiMitsov">Georgi Mitsov (HU Berlin)</a></li>
-  <li><a href="#JohannaGrell">Johanna Grell (FU Berlin)</a></li>
-  <li><a href="#KoenBresters">Koen Bresters (FU Berlin)</a></li>
-  <li><a href="#RaghdaAbdellatif">Raghda Abdellatif (?)</a> <span class="badge badge-warning">Abstract pending</span></li>
-  <li><a href="#RobinChemnitz">Robin Chemnitz (FU Berlin)</a></li>
-  <li><a href="#ViktorStein">Viktor Stein (FU Berlin)</a></li>
-</ul>
+            <li><a href="#AnaDamnjanovic">Ana Damnjanovi&#263; (FU Berlin)</a></li>
+            <li><a href="#AndreiBalakin">Andrei Balakin (TU Berlin)</a></li>
+            <li><a href="#BalintZsigri">B&aacute;lint Zsigri (TU Berlin)</a> <span class="badge badge-warning">Abstract pending</span></li>
+            <li><a href="#ChunShengHsueh">Chun-Sheng Hsueh (HU Berlin)</a></li>
+            <li><a href="#EliaImmanuelAuer">Elia Immanuel Auer (FU Berlin)</a> <span class="badge badge-warning">Abstract pending</span></li>
+            <li><a href="#FatemehZeinabadi">Fatemeh Zeinabadi (FU Berlin)</a> <span class="badge badge-warning">Abstract pending</span></li>
+            <li><a href="#FawzyNaguibHegab">Fawzy Naguib Hegab (HU Berlin)</a> <span class="badge badge-warning">Abstract pending</span></li>
+            <li><a href="#GeorgiMitsov">Georgi Mitsov (HU Berlin)</a></li>
+            <li><a href="#JohannaGrell">Johanna Grell (FU Berlin)</a></li>
+            <li><a href="#KoenBresters">Koen Bresters (FU Berlin)</a></li>
+            <li><a href="#RaghdaAbdellatif">Raghda Abdellatif</a> <span class="badge badge-warning">Abstract pending</span></li>
+            <li><a href="#RobinChemnitz">Robin Chemnitz (FU Berlin)</a></li>
+            <li><a href="#ViktorStein">Viktor Stein (FU Berlin)</a></li>
+          </ul>
 
           <h2>Plenary talks</h2>
-          
+
           <div id="zama">
-  <h3 id="Altmann">Varieties, sheaves, and polytopes</h3>
-  <h4>Klaus Altmann (FU Berlin)</h4>
+            <h3 id="Altmann">Varieties, sheaves, and polytopes</h3>
+            <h4>Klaus Altmann (FU Berlin)</h4>
 
-  <p>
-    Projective spaces or, more general, so-called toric varieties <em>X</em> can
-    be encoded by convex polyhedra. Actually, these gadgets carry more
-    information than just that of the variety—namely also that of
-    special projective embeddings of <em>X</em>.
-  </p>
+            <p align="justify">
+              Projective spaces or, more general, so-called toric varieties <em>X</em> can
+              be encoded by convex polyhedra. Actually, these gadgets carry more
+              information than just that of the variety—namely also that of
+              special projective embeddings of <em>X</em>.
+            </p>
 
-  <p>
-    The latter is linked to so-called invertible sheaves on <em>X</em>. We will
-    explain both this notion and relationship. Moreover, we show that
-    even the cohomology of these sheaves can be read off the polyhedra.
-  </p>
-  <p align="right">More information about Prof. Thomas can be found <a href="invited_speakers.html#sec_internal">here</a>.</p>
-</div>
+            <p align="justify">
+              The latter is linked to so-called invertible sheaves on <em>X</em>. We will
+              explain both this notion and relationship. Moreover, we show that
+              even the cohomology of these sheaves can be read off the polyhedra.
+            </p>
+			   <p align="right">More information about Prof. Altmann can be found <a href="invited_speakers.html#sec_external">here</a>.</p>
+          </div>
 
-		  
-          <div id="zama">Marie-Charlotte Brandenburg
+          <div id="zama">
             <h3 id="Brandenburg">Talk (title TBA)</h3>
-  <h4></h4>
-  <p><em>Abstract coming soon.</em></p>
+            <h4>Marie-Charlotte Brandenburg (Ruhr-Universit&auml;t Bochum)</h4>
+            <p><em>Abstract coming soon.</em></p>
+          </div>
 
-               <div id="zama">Benedikt Gräßle
-            <h3 id="Gräßle">Talk (title TBA)</h3>
-  <h4></h4>
-  <p><em>Abstract coming soon.</em></p>
-
-          <p></p>
+          <div id="zama">
+            <h3 id="Graessle">Talk (title TBA)</h3>
+            <h4>Benedikt Gr&auml;&szlig;le (University of Z&uuml;rich)</h4>
+            <p><em>Abstract coming soon.</em></p>
+          </div>
 
           <h2>Student talks</h2>
-          <!--The titles and abstracts of student talks will be displayed here.--> 
-         <div id="zama">
-  <h3 id="AnaDamnjanovic">Finite Volume Methods For Regularised Dean-Kawasaki equations</h3>
-  <h4>Ana Damnjanovi&#263; — Research Talk</h4>
-  <p>
-    Stochastic partial differential equations (SPDEs) and PDEs are often used to model the evolution of particle densities in systems with many interacting particles. In this talk, I will introduce the Dean–Kawasaki SPDE and discuss some of the difficulties that arise when studying its solutions. We are particularly interested in how solutions to such equations can be approximated numerically.
-  </p>
-</div>
 
-<div id="zama">
-  <h3 id="AndreiBalakin">On Discrete Geometry of Neural Networks</h3>
-  <h4>Andrei Balakin — Research Talk</h4>
-  <p>
-    What does discrete geometry have to do with neural networks? In this talk, I will explain how neural networks can be studied using tools from discrete geometry, including polyhedral complexes and hyperplane arrangements.
-  </p>
-</div>
+          <div id="zama">
+            <h3 id="AnaDamnjanovic">Finite Volume Methods For Regularised Dean-Kawasaki equations</h3>
+            <h4>Ana Damnjanovi&#263; — Research Talk</h4>
+            <p align="justify">
+              Stochastic partial differential equations (SPDEs) and PDEs are often used to model the evolution of particle densities in systems with many interacting particles. In this talk, I will introduce the Dean–Kawasaki SPDE and discuss some of the difficulties that arise when studying its solutions. We are particularly interested in how solutions to such equations can be approximated numerically.
+            </p>
+          </div>
 
-<div id="zama">
-  <h3 id="BalintZsigri">Talk (title TBA)</h3>
-  <h4>B&aacute;lint Zsigri — Research Talk</h4>
-  <p><em>Abstract coming soon.</em></p>
-</div>
+          <div id="zama">
+            <h3 id="AndreiBalakin">On Discrete Geometry of Neural Networks</h3>
+            <h4>Andrei Balakin — Research Talk</h4>
+            <p align="justify">
+              What does discrete geometry have to do with neural networks? In this talk, I will explain how neural networks can be studied using tools from discrete geometry, including polyhedral complexes and hyperplane arrangements.
+            </p>
+          </div>
 
-<div id="zama">
-  <h3 id="ChunShengHsueh">Braided open books</h3>
-  <h4>Chun-Sheng Hsueh — Research Talk</h4>
-  <p>
-    Every fibered link in the 3-sphere arises as the closure of a braid. In this talk, I will discuss recent results on these so-called braided open books.
-  </p>
-</div>
+          <div id="zama">
+            <h3 id="BalintZsigri">Talk (title TBA)</h3>
+            <h4>B&aacute;lint Zsigri — Research Talk <span class="badge badge-warning">Abstract pending</span></h4>
+            <p><em>Abstract coming soon.</em></p>
+          </div>
 
-<div id="zama">
-  <h3 id="EliaImmanuelAuer">Talk (title TBA)</h3>
-  <h4>Elia Immanuel Auer — Expository Talk</h4>
-  <p><em>Abstract coming soon.</em></p>
-</div>
+          <div id="zama">
+            <h3 id="ChunShengHsueh">Braided open books</h3>
+            <h4>Chun-Sheng Hsueh — Research Talk</h4>
+            <p align="justify">
+              Every fibered link in the 3-sphere arises as the closure of a braid. In this talk, I will discuss recent results on these so-called braided open books.
+            </p>
+          </div>
 
-<div id="zama">
-  <h3 id="FatemehZeinabadi">Talk (title TBA)</h3>
-  <h4>Fatemeh Zeinabadi — Expository Talk</h4>
-  <p><em>Abstract coming soon.</em></p>
-</div>
+          <div id="zama">
+            <h3 id="EliaImmanuelAuer">Talk (title TBA)</h3>
+            <h4>Elia Immanuel Auer — Expository Talk <span class="badge badge-warning">Abstract pending</span></h4>
+            <p><em>Abstract coming soon.</em></p>
+          </div>
 
-<div id="zama">
-  <h3 id="FawzyNaguibHegab">Talk (title TBA)</h3>
-  <h4>Fawzy Naguib Hegab — Research Talk</h4>
-  <p><em>Abstract coming soon.</em></p>
-</div>
+          <div id="zama">
+            <h3 id="FatemehZeinabadi">Talk (title TBA)</h3>
+            <h4>Fatemeh Zeinabadi — Expository Talk <span class="badge badge-warning">Abstract pending</span></h4>
+            <p><em>Abstract coming soon.</em></p>
+          </div>
 
-<div id="zama">
-  <h3 id="GeorgiMitsov">Geometric flows and singularities</h3>
-  <h4>Georgi Mitsov — Expository Talk</h4>
-  <p>
-    In this talk we will introduce geometric flows and discuss how singularities can form along the evolution.
-  </p>
-</div>
+          <div id="zama">
+            <h3 id="FawzyNaguibHegab">Talk (title TBA)</h3>
+            <h4>Fawzy Naguib Hegab — Research Talk <span class="badge badge-warning">Abstract pending</span></h4>
+            <p><em>Abstract coming soon.</em></p>
+          </div>
 
-<div id="zama">
-  <h3 id="JohannaGrell">Partitioning edge-colored graphs into monochromatic subgraphs</h3>
-  <h4>Johanna Grell — Expository Talk</h4>
-  <p>
-    We discuss results and open problems on partitioning edge-colored graphs into monochromatic paths, cycles, and other structures.
-  </p>
-</div>
+          <div id="zama">
+            <h3 id="GeorgiMitsov">Geometric flows and singularities</h3>
+            <h4>Georgi Mitsov — Expository Talk</h4>
+            <p align="justify">
+              In this talk we will introduce geometric flows and discuss how singularities can form along the evolution.
+            </p>
+          </div>
 
-<div id="zama">
-  <h3 id="KoenBresters">An introduction to Homotopy Type Theory and its Univalent Foundations</h3>
-  <h4>Koen Bresters — Expository Talk</h4>
-  <p>
-    Homotopy type theory unifies ideas from logic, computer science, and homotopy theory. We introduce its foundations and applications.
-  </p>
-</div>
+          <div id="zama">
+            <h3 id="JohannaGrell">Partitioning edge-colored graphs into monochromatic subgraphs</h3>
+            <h4>Johanna Grell — Expository Talk</h4>
+            <p align="justify">
+              We discuss results and open problems on partitioning edge-colored graphs into monochromatic paths, cycles, and other structures.
+            </p>
+          </div>
 
-<div id="zama">
-  <h3 id="RaghdaAbdellatif">Talk (title TBA)</h3>
-  <h4>Raghda Abdellatif — Research Talk</h4>
-  <p><em>Abstract coming soon.</em></p>
-</div>
+          <div id="zama">
+            <h3 id="KoenBresters">An introduction to Homotopy Type Theory and its Univalent Foundations</h3>
+            <h4>Koen Bresters — Expository Talk</h4>
+            <p align="justify">
+              Homotopy type theory unifies ideas from logic, computer science, and homotopy theory. We introduce its foundations and applications.
+            </p>
+          </div>
 
-<div id="zama">
-  <h3 id="RobinChemnitz">Mixing in Fluids — The Batchelor Scale</h3>
-  <h4>Robin Chemnitz — Research Talk</h4>
-  <p>
-    We discuss how stirring creates small scales in scalar fields and what limits the smallest achievable scale when diffusion is present.
-  </p>
-</div>
+          <div id="zama">
+            <h3 id="RaghdaAbdellatif">Talk (title TBA)</h3>
+            <h4>Raghda Abdellatif — Research Talk <span class="badge badge-warning">Abstract pending</span></h4>
+            <p><em>Abstract coming soon.</em></p>
+          </div>
 
-<div id="zama">
-  <h3 id="ViktorStein">What does Adam have to do with symplectic manifolds?</h3>
-  <h4>Viktor Stein — Expository Talk</h4>
-  <p>
-    We explore unexpected connections between optimization methods and symplectic geometry.
-  </p>
-</div>
+          <div id="zama">
+            <h3 id="RobinChemnitz">Mixing in Fluids — The Batchelor Scale</h3>
+            <h4>Robin Chemnitz — Research Talk</h4>
+            <p align="justify">
+              We discuss how stirring creates small scales in scalar fields and what limits the smallest achievable scale when diffusion is present.
+            </p>
+          </div>
+
+          <div id="zama">
+            <h3 id="ViktorStein">What does Adam have to do with symplectic manifolds?</h3>
+            <h4>Viktor Stein — Expository Talk</h4>
+            <p align="justify">
+              We explore unexpected connections between optimization methods and symplectic geometry.
+            </p>
+          </div>
+
         </div>
       </div>
+
       <hr>
 
       <footer>
         <p>&copy;2026 14th BMS Student Conference Organizers</p>
       </footer>
-    </div> <!-- /container -->
+    </div>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <!-- For math expressions -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-ekJxthwrl3ID8DzHP2myRUdIPhTdEgNJ1xKhDsMKDT3+kBlZ4Zwk5zH960SnLZR8" crossorigin="anonymous"></script>
 
-    <!-- HACK: hide the navigation bar when scrolling.
-    Otherwise, when jumping to the section for each talk the navigation bar hides the talk's title. -->
+    <!-- HACK: hide the navigation bar when scrolling -->
     <script>
       var prevScrollpos = window.pageYOffset;
       window.onscroll = function() {
@@ -265,7 +251,6 @@
         if (prevScrollpos > currentScrollPos) {
           document.getElementById("navbar").style.top = "0";
         } else {
-          // The value of 60px was determined by trial and error; better ways welcome.
           document.getElementById("navbar").style.top = "-60px";
         }
         prevScrollpos = currentScrollPos;
