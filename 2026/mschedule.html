@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">]
+    <meta name="description" content="">
     <meta name="author" content="2026 BMS Student Conference organizers">
     <link rel="icon" href="../imgs/BMS-logo.png">
 
@@ -13,103 +14,83 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
+    <!-- Custom styles for this template -->
     <link href="css/style_subpages.css" rel="stylesheet">
+
     <style>
-table{
-  border-collapse: separate;
-}
-/* Style all rows: entries are centered */
-tr:nth-child(1n) {
-  text-align: center;
-}
-/* Make the first talk in each session stand out more clearly,
-      to prevent all talks from melding to a giant mish-mash. */
-      /*
-      tr:nth-child(4), tr:nth-child(7), tr:nth-child(12), tr:nth-child(15) {
-        background-color:#F597DA;
-      }*/
-      /* The first row is the title row, hence styled differently. */
-      /*tr:nth-child(1) {
-          background-color: #502A34;
-          color: white;
-          text-align: left;
-}*/
+      table { border-collapse: separate; }
 
+      /* Style all rows: entries are centered */
+      tr:nth-child(1n) { text-align: center; }
 
-/* Style the columns: the first is the title column. */
-td:nth-child(1) {
-          width: 15%;
-          background-color: #603140;
-          color: white;
+      /* Style the columns: the first is the title column. */
+      td:nth-child(1) {
+        width: 15%;
+        background-color: #603140;
+        color: white;
       }
-      td:not(:first-child) {
-        width: 29%;
-      }
-      
-/* Finally, define a special style for the rows contains special events
-(Coffee breaks, lunch breaks, invited talks and the social events). */
+      td:not(:first-child) { width: 29%; }
+
+      /* Finally, define a special style for the rows contains special events
+         (Coffee breaks, lunch breaks, invited talks and the social events). */
       #Coffee_break1, #Coffee_break2 {
-          background-color: #6F4E37;
+        background-color: #6F4E37;
         color: white;
       }
       #lunch {
         background-color: #CF188F;
         color: white;
       }
-
       #invited_speaker1, #invited_speaker2, #invited_speaker3 {
         background-color: #EE7733;
         color: white;
       }
-      
       #social_event {
         background-color:  #52be80;
         color: white;
       }
-
       #career_event {
         background-color:  #bb8fce;
         color: white;
       }
-      
       #wine_and_cheese {
-        /* last year: social event in green, W&C in red */
         background-color:  #cd6155 ;
         color: white;
       }
-      
       #registration1, #registration2, #introduction {
         background-color: #866D56;
         color: white;
       }
-      
-      a:link {
+
+      a:link, a:visited {
         color: #005158;
         background-color: transparent;
         text-decoration: none;
       }
-      
-      a:visited {
-        color: #005158;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      
       a:hover {
         color: #c50e1f;
         background-color: transparent;
         text-decoration: underline;
       }
-      
       a:active {
         color: #FACC2E;
         background-color: transparent;
         text-decoration: underline;
       }
-      
 
-</style>
+      /* 1) Add space between speaker abstracts (talk blocks) */
+      .talk-block{
+        margin: 24px 0;
+        padding: 14px 16px;
+        border-radius: 8px;
+      }
+
+      /* (Optional) 2) Make "Area" badge match website pink (Option 2 override) */
+      .badge-info {
+        background-color: #CF188F !important;
+        color: white;
+      }
+    </style>
   </head>
 
   <body>
@@ -121,36 +102,16 @@ td:nth-child(1) {
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="invited_speakers.html">Invited speakers</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="talks.html">Talks <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="events.html">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="schedule.html">Schedule</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="venue.html">Venue</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="registration.html">Registration</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="poster.html">Poster</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="organization.html">Organization</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pictures.html">Pictures</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="invited_speakers.html">Invited speakers</a></li>
+          <li class="nav-item active"><a class="nav-link" href="talks.html">Talks <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+          <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+          <li class="nav-item"><a class="nav-link" href="registration.html">Registration</a></li>
+          <li class="nav-item"><a class="nav-link" href="poster.html">Poster</a></li>
+          <li class="nav-item"><a class="nav-link" href="organization.html">Organization</a></li>
+          <li class="nav-item"><a class="nav-link" href="pictures.html">Pictures</a></li>
         </ul>
       </div>
     </nav>
@@ -176,164 +137,157 @@ td:nth-child(1) {
           </p>
           <hr>
 
+          <div class="row">
+            <div class="col-md-12">
+              <table style="width:100%">
+                <tr>
+                  <th></th>
+                  <th><center>Wednesday 18th</center></th>
+                  <th><center>Thursday 19th</center></th>
+                  <th><center>Friday 20th</center></th>
+                </tr>
 
-           <div class="row">
-        <div class="col-md-12">
-          <table style="width:100%">
-  <tr>
-    <th></th>
-    <th><center>Wednesday 18th</center></th>
-    <th><center>Thursday 19th</center></th>
-    <th><center>Friday 20th</center></th>
-  </tr>
+                <tr>
+                  <td>09:30–10:00</td>
+                  <td id="registration1">Registration + Coffee</td>
+                  <td id="registration2">Registration + Coffee</td>
+                  <td id="registration2">Coffee</td>
+                </tr>
 
-  <tr>
-    <td>09:30–10:00</td>
-    <td id="registration1">Registration + Coffee</td>
-    <td id="registration2">Registration + Coffee</td>
-    <td id="registration2">Coffee</td>
-  </tr>
+                <tr>
+                  <td>10:00–10:30</td>
+                  <td rowspan="2" id="invited_speaker1">Invited speaker<br> <a href="#Altmann">Altmann</a></td>
+                  <td rowspan="2" id="invited_speaker2">Invited speaker<br> <a href="#Brandenburg">Brandenburg</a></td>
+                  <td rowspan="2" id="invited_speaker3">Invited speaker<br> <a href="#Graessle">Gr&auml;&szlig;le</a></td>
+                </tr>
 
-  <tr>
-    <td>10:00–10:30</td>
-     <td rowspan="2" id="invited_speaker1">Invited speaker<br> <a href="talks.html#Altmann">Altmann</a></td>
-      <td rowspan="2" id="invited_speaker2">Invited speaker<br>  <a href="talks.html#Brandenburg">Brandenburg</a></td>
-      <td rowspan="2" id="invited_speaker3">Invited speaker<br>    <a href="talks.html#Graessle">Gr&auml;&szlig;le</a></td>
-  </tr>
+                <tr>
+                  <td>10:30–11:00</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
 
-  <tr>
-    <td>10:30–11:00</td>
-     <td></td>
-    <td></td>
-    <td></td>
-  </tr>
+                <tr>
+                  <td>11:00–11:30</td>
+                  <td colspan="3" id="Coffee_break1">questions + Coffee</td>
+                </tr>
 
-  <tr>
-    <td>11:00–11:30</td>
-    <td colspan="3" id="Coffee_break1">questions + Coffee</td>
-  </tr>
+                <tr>
+                  <td>11:30–12:00</td>
+                  <td><a href="#RaghdaAbdellatif">Raghda Abdellatif</a></td>
+                  <td><a href="#FatemehZeinabadi">Fatemeh Zeinabadi</a></td>
+                  <td><a href="#AnaDamnjanovic">Ana Damnjanovic</a></td>
+                </tr>
 
-  <tr>
-    <td>11:30–12:00</td>
-    <td><a href="talks.html#RaghdaAbdellatif">Raghda Abdellatif</a></td>
-    <td><a href="talks.html#FatemehZeinabadi">Fatemeh Zeinabadi</a></td>
-    <td><a href="talks.html#AnaDamnjanovic">Ana Damnjanovic</a></td>
-  </tr>
+                <tr>
+                  <td>12:00–12:30</td>
+                  <td><a href="#FawzyNaguibHegab">Fawzy Naguib Hegab</a></td>
+                  <td><a href="#JohannaGrell">Johanna Grell</a></td>
+                  <td><a href="#ViktorStein">Viktor Stein</a></td>
+                </tr>
 
-  <tr>
-    <td>12:00–12:30</td>
-    <td><a href="talks.html#FawzyNaguibHegab">Fawzy Naguib Hegab</a></td>
-    <td><a href="talks.html#JohannaGrell">Johanna Grell</a></td>
-    <td><a href="talks.html#ViktorStein">Viktor Stein</a></td>
-  </tr>
+                <tr>
+                  <td>12:30-13:00</td>
+                  <td rowspan="3" id="lunch"><font size="5">Lunch + Coffee</font></td>
+                  <td rowspan="3" id="lunch"><font size="5">Lunch + Coffee</font></td>
+                  <td rowspan="3" id="lunch"><font size="5">Lunch + Coffee</font></td>
+                </tr>
 
-<tr>
-          <td>12:30-13:00</td>
-          <!--<td rowspan="3" colspan="1" id="lunch"><font size="5">Poster session (and Lunch afterwards)</font></td>-->
-          <td rowspan="3" id="lunch"><font size="5">Lunch + Coffee</font></td>
-          <td rowspan="3" id="lunch"><font size="5">Lunch + Coffee</font></td>
-         <td rowspan="3" id="lunch"><font size="5">Lunch + Coffee</font></td>
-        </tr>
+                <tr><td>13:00-13:30</td></tr>
+                <tr><td>13:30-14:00</td></tr>
 
-<tr>
-     <td>13:00-13:30</td>
-</tr>
+                <tr>
+                  <td>14:00–14:30</td>
+                  <td><a href="#FawzyNaguibHegab-2">Fawzy Naguib Hegab</a></td>
+                  <td><a href="#KoenBresters">Koen Bresters</a></td>
+                  <td><a href="#GeorgiMitsov">Georgi Mitsov</a></td>
+                </tr>
 
-<tr>
-     <td>13:30-14:00</td>
-</tr>
+                <tr>
+                  <td>14:30–15:00</td>
+                  <td><a href="#BogdanCarasca">Bogdan Carasca</a></td>
+                  <td><a href="#BalintZsigri">B&aacute;lint Zsigri</a></td>
+                  <td><a href="#RobinChemnitz">Robin Chemnitz</a></td>
+                </tr>
 
-  <tr>
-    <td>14:00–14:30</td>
-    <td><a href="talks.html#FawzyNaguibHegab">Fawzy Naguib Hegab</a></td>
-    <td><a href="talks.html#KoenBresters">Koen Bresters</a></td>
-    <td><a href="talks.html#GeorgiMitsov">Georgi Mitsov</a></td>
-  </tr>
+                <tr>
+                  <td>15:00–15:30</td>
+                  <td><a href="#Riccardo">Riccardo Redigolo</a></td>
+                  <td><a href="#EliaImmanuelAuer">Elia Immanuel Auer</a></td>
+                  <td id="introduction">Closing</td>
+                </tr>
 
-  <tr>
-    <td>14:30–15:00</td>
-    <td><a href="talks.html#BogdanCarasca">Bogdan Carasca</a></td>
-    <td><a href="talks.html#BalintZsigri">B&aacute;lint Zsigri</a></td>
-    <td><a href="talks.html#RobinChemnitz">Robin Chemnitz</a></td>
-  </tr>
+                <tr>
+                  <td>15:30–16:00</td>
+                  <td rowspan="2" id="social_event">Travel together to<br>the <a href="venue.html">Kegeln venue</a></td>
+                  <td id="Coffee_break2">Coffee</td>
+                  <td></td>
+                </tr>
 
-  <tr>
-    <td>15:00–15:30</td>
-    <td><a href="talks.html#Riccardo">Riccardo Redigolo</a></td>
-    <td><a href="talks.html#EliaImmanuelAuer">Elia Immanuel Auer</a></td>
-    <td id="introduction">Closing</td>
-  </tr>
+                <tr>
+                  <td>16:00–16:30</td>
+                  <td><a href="#ChunShengHsueh">Chun-Sheng Hsueh</a></td>
+                  <td></td>
+                </tr>
 
-  <tr>
-    <td>15:30–16:00</td>
-    <td rowspan="2" id="social_event">Travel together to<br>the <a href="venue.html">Kegeln venue</a></td>
-    <td id="Coffee_break2">Coffee</td>
-    <td></td>
-  </tr>
+                <tr>
+                  <td>16:30–17:00</td>
+                  <td rowspan="4" id="social_event"><a href="events.html#outing"><font size=6>Kegeln</font></a></td>
+                  <td><a href="#AndreiBalakin">Andrei Balakin</a></td>
+                  <td></td>
+                </tr>
 
-<tr>
-  <td>16:00–16:30</td>
-  <td><a href="talks.html#ChunShengHsueh">Chun-Sheng Hsueh</a></td>
-  <td></td>
-</tr>
+                <tr>
+                  <td>17:30–18:00</td>
+                  <td rowspan="6" id="wine_and_cheese"><a href="events.html#wine-and-cheese"><font size=6>Wine<br> and<br>Cheese</font></a></td>
+                  <td></td>
+                </tr>
 
+                <tr>
+                  <td>18:00–18:30</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
 
-  <tr>
-    <td>16:30–17:00</td>
-    <td rowspan="4" id="social_event"><a href="events.html#outing"><font size=6>Kegeln</font></a></td>
-    <td><a href="talks.html#AndreiBalakin">Andrei Balakin</a></td>
-    <td></td>
-  </tr>
+                <tr>
+                  <td>18:30-19:00</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
 
-  <tr>
-    <td>17:30–18:00</td>
-    <td rowspan="6" id=wine_and_cheese><a href="events.html#wine-and-cheese"><font size=6>Wine<br> and<br>Cheese</font></a></td>
-    <td></td>
-  </tr>
-              <tr>
-    <td>18:00–18:30</td>
-      <td></td>
-    <td></td>
-    <td></td>
-  </tr>
- <tr>
-    <td>18:30-19:00</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
+                <tr>
+                  <td>19:00-19:30</td>
+                  <td rowspan="7" id="social_event"><a href="events.html#outing"><font size=6>Dinner and<br>Night Out</font></a></td>
+                  <td></td>
+                  <td></td>
+                </tr>
 
-             <tr>
-    <td>19:00-19:30</td>
-<td rowspan="7" id="social_event"><a href="events.html#outing"><font size=6>Dinner and<br>Night Out</font></a></td>    
-    <td></td>
-    <td></td>
-  </tr>
+                <tr>
+                  <td>19:30-20:00</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
 
-             <tr>
-    <td>19:30-20:00</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-      
+                <tr>
+                  <td>20:00–21:00</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
 
-  <tr>
-    <td>20:00–21:00</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>21:30–22:00</td>
-    <td><td>
-    <td></td>
-    <td></td>
-  </tr>
-
-</table>
-
+                <tr>
+                  <td>21:30–22:00</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
 
           <!-- ===================== -->
           <!-- Wednesday -->
@@ -342,7 +296,7 @@ td:nth-child(1) {
           <h2>Wednesday, February 18</h2>
 
           <h3 id="wed-10">10:00–11:15 · Plenary</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="Altmann">Varieties, sheaves, and polytopes</h3>
             <h4>Klaus Altmann (FU Berlin)</h4>
             <p><span class="badge badge-info">Area: Algebraic Geometry / Toric Geometry</span></p>
@@ -364,7 +318,7 @@ td:nth-child(1) {
           </div>
 
           <h3 id="wed-1130">11:30–12:00</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="RaghdaAbdellatif">Talk (title TBA)</h3>
             <h4>Raghda Abdellatif — Research Talk <span class="badge badge-warning">Abstract pending</span></h4>
             <p><span class="badge badge-info">Area: Algebraic Geometry</span></p>
@@ -372,7 +326,7 @@ td:nth-child(1) {
           </div>
 
           <h3 id="wed-1200">12:00–12:30</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="FawzyNaguibHegab">Talk (title TBA)</h3>
             <h4>Fawzy Naguib Hegab — Expository Talk <span class="badge badge-warning">Abstract pending</span></h4>
             <p><span class="badge badge-info">Area: Algebra and Geometry</span></p>
@@ -380,7 +334,7 @@ td:nth-child(1) {
           </div>
 
           <h3 id="wed-1400">14:00–14:30</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="FawzyNaguibHegab-2">Talk (title TBA)</h3>
             <h4>Fawzy Naguib Hegab — Expository Talk <span class="badge badge-warning">Abstract pending</span></h4>
             <p><span class="badge badge-info">Area: Algebra and Geometry</span></p>
@@ -388,17 +342,17 @@ td:nth-child(1) {
           </div>
 
           <h3 id="wed-1430">14:30–15:00</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="BogdanCarasca">On Moduli Spaces of Curves</h3>
             <h4>Bogdan Carasca — Expository Talk</h4>
             <p><span class="badge badge-info">Area: Algebraic Geometry</span></p>
             <p align="justify">
-             We give a general overview of moduli theory and it's place in mathematics. The main example of our talk will be the moduli space of curves with an emphasis on its birational geometry.
+              We give a general overview of moduli theory and it's place in mathematics. The main example of our talk will be the moduli space of curves with an emphasis on its birational geometry.
             </p>
           </div>
 
           <h3 id="wed-1500">15:00–15:30</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="Riccardo">Talk (title TBA)</h3>
             <h4>Riccardo Redigolo— Talk</h4>
             <p><span class="badge badge-info">Area: Algebraic Geometry</span></p>
@@ -414,7 +368,7 @@ td:nth-child(1) {
           <h2>Thursday, February 19</h2>
 
           <h3 id="thu-10">10:00–11:15 · Plenary</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="Brandenburg">Talk (title TBA)</h3>
             <h4>Marie-Charlotte Brandenburg (Ruhr-Universit&auml;t Bochum)</h4>
             <p><span class="badge badge-secondary">Area: TBA</span></p>
@@ -422,7 +376,7 @@ td:nth-child(1) {
           </div>
 
           <h3 id="thu-1130">11:30–12:00</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="FatemehZeinabadi">Talk (title TBA)</h3>
             <h4>Fatemeh Zeinabadi — Expository Talk <span class="badge badge-warning">Abstract pending</span></h4>
             <p><span class="badge badge-info">Area: Discrete Geometry</span></p>
@@ -430,29 +384,29 @@ td:nth-child(1) {
           </div>
 
           <h3 id="thu-1200">12:00–12:30</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="JohannaGrell">Partitioning edge-colored graphs into monochromatic cycles and paths</h3>
             <h4>Johanna Grell — Expository Talk</h4>
             <p><span class="badge badge-info">Area: Graph Theory</span></p>
             <p align="justify">
-              "A complete graph consists of a finite set of vertices, with an edge joining every two distinct vertices. When the edges of such a graph are colored, certain monochromatic structures turn out to be unavoidable, regardless of how the coloring is chosen.
-An example of this phenomenon is a result conjectured by Lehel: every complete graph whose edges are colored red and blue admits a partition of its vertices into one red cycle and one blue cycle. In this talk, we present the main ideas behind the proof by Bessy and Thomassé. No prior knowledge of graph theory is assumed, as the proof relies only on elementary combinatorial arguments."
+              A complete graph consists of a finite set of vertices, with an edge joining every two distinct vertices. When the edges of such a graph are colored, certain monochromatic structures turn out to be unavoidable, regardless of how the coloring is chosen.
+              An example of this phenomenon is a result conjectured by Lehel: every complete graph whose edges are colored red and blue admits a partition of its vertices into one red cycle and one blue cycle. In this talk, we present the main ideas behind the proof by Bessy and Thomassé. No prior knowledge of graph theory is assumed, as the proof relies only on elementary combinatorial arguments.
             </p>
           </div>
 
           <h3 id="thu-1400">14:00–14:30</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="KoenBresters">An introduction to Homotopy Type Theory and its applications</h3>
             <h4>Koen Bresters — Expository Talk</h4>
             <p><span class="badge badge-info">Area: Homotopy Type Theory</span></p>
             <p align="justify">
-              "Homotopy type theory (HoTT) is a formal system for mathematics which rather than sets and propositions, takes 'types' and functions as its building blocks. One can think of types as collections of mathematical objects with a notion of isomorphism between them built-in. Every construction in HoTT is *automatically* invariant under isomorphism, which mimics patterns observed in mathematical practice, and has concrete advantages. For example, proving an object satisfying a certain universal property exists, is the same as giving a construction of it; allowing one to avoid the use of the axiom of choice in category theory.
-Alternatively one can interpret types as 'homotopy types', with terms corresponding to points, isomorphisms corresponding to paths, isomorphisms between isomorphisms corresponding to homotopies of paths, etc. This allows one to use the very same theory to prove statements in homotopy theory, completely computer verifiably, without ever mentioning topological spaces. Even more generally, HoTT can be interpreted in any ∞-topos. Choosing this topos carefully allows one to reason about higher categories (notoriously hard to define objects) in a very efficient way. In this talk I'll give an introduction to homotopy type theory, show some of the advantages of taking it as your mathematical foundation and sketch some of these applications beyond just foundational concerns."
+              Homotopy type theory (HoTT) is a formal system for mathematics which rather than sets and propositions, takes 'types' and functions as its building blocks. One can think of types as collections of mathematical objects with a notion of isomorphism between them built-in. Every construction in HoTT is *automatically* invariant under isomorphism, which mimics patterns observed in mathematical practice, and has concrete advantages. For example, proving an object satisfying a certain universal property exists, is the same as giving a construction of it; allowing one to avoid the use of the axiom of choice in category theory.
+              Alternatively one can interpret types as 'homotopy types', with terms corresponding to points, isomorphisms corresponding to paths, isomorphisms between isomorphisms corresponding to homotopies of paths, etc. This allows one to use the very same theory to prove statements in homotopy theory, completely computer verifiably, without ever mentioning topological spaces. Even more generally, HoTT can be interpreted in any ∞-topos. Choosing this topos carefully allows one to reason about higher categories (notoriously hard to define objects) in a very efficient way. In this talk I'll give an introduction to homotopy type theory, show some of the advantages of taking it as your mathematical foundation and sketch some of these applications beyond just foundational concerns.
             </p>
           </div>
 
           <h3 id="thu-1430">14:30–15:00</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="BalintZsigri">Talk (title TBA)</h3>
             <h4>B&aacute;lint Zsigri — Research Talk <span class="badge badge-warning">Abstract pending</span></h4>
             <p><span class="badge badge-info">Area: Topological Combinatorics</span></p>
@@ -460,7 +414,7 @@ Alternatively one can interpret types as 'homotopy types', with terms correspond
           </div>
 
           <h3 id="thu-1500">15:00–15:30</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="EliaImmanuelAuer">Talk (title TBA)</h3>
             <h4>Elia Immanuel Auer — Expository Talk <span class="badge badge-warning">Abstract pending</span></h4>
             <p><span class="badge badge-info">Area: Topology</span></p>
@@ -468,7 +422,7 @@ Alternatively one can interpret types as 'homotopy types', with terms correspond
           </div>
 
           <h3 id="thu-1600">16:00–16:30</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="ChunShengHsueh">Braided open books</h3>
             <h4>Chun-Sheng Hsueh — Research Talk</h4>
             <p><span class="badge badge-info">Area: Geometric Topology</span></p>
@@ -478,14 +432,14 @@ Alternatively one can interpret types as 'homotopy types', with terms correspond
           </div>
 
           <h3 id="thu-1630">16:30–17:00</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="AndreiBalakin">On Discrete Geometry of Neural Networks</h3>
             <h4>Andrei Balakin — Research Talk</h4>
             <p><span class="badge badge-info">Area: Discrete Geometry</span></p>
             <p align="justify">
-              "What does discrete geometry have to do with neural networks?
-An important class of neural networks (namely, those with ReLU activations) represents exactly piecewise-linear functions. These are, among others, application areas of combinatorial and polyhedral techniques.
-In the talk, I will give a short introduction to the developing research field of polyhedral geometry in neural networks and present an example to illustrate how polytopes can be used to study networks."
+              What does discrete geometry have to do with neural networks?
+              An important class of neural networks (namely, those with ReLU activations) represents exactly piecewise-linear functions. These are, among others, application areas of combinatorial and polyhedral techniques.
+              In the talk, I will give a short introduction to the developing research field of polyhedral geometry in neural networks and present an example to illustrate how polytopes can be used to study networks.
             </p>
           </div>
 
@@ -498,7 +452,7 @@ In the talk, I will give a short introduction to the developing research field o
           <h2>Friday, February 20</h2>
 
           <h3 id="fri-1000">10:00–11:15 · Plenary</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="Graessle">Talk (title TBA)</h3>
             <h4>Benedikt Gr&auml;&szlig;le (University of Z&uuml;rich)</h4>
             <p><span class="badge badge-secondary">Area: TBA</span></p>
@@ -506,7 +460,7 @@ In the talk, I will give a short introduction to the developing research field o
           </div>
 
           <h3 id="fri-1130">11:30–12:00</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="AnaDamnjanovic">Finite Volume Methods For Regularised Dean-Kawasaki equations</h3>
             <h4>Ana Damnjanovi&#263; — Research Talk</h4>
             <p><span class="badge badge-info">Area: Stochastics &amp; Numerics</span></p>
@@ -516,18 +470,18 @@ In the talk, I will give a short introduction to the developing research field o
           </div>
 
           <h3 id="fri-1200">12:00–12:30</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="ViktorStein">What does Adam have to do with symplectic manifolds? The geometry behind momentum methods in machine learning</h3>
             <h4>Viktor Stein — Expository Talk</h4>
             <p><span class="badge badge-info">Area: Applied Analysis</span></p>
             <p align="justify">
-              "Gradient-based optimization algorithms are indispensable for most modern machine learning applications, since they are used to train convolutional neural networks (CNNs) for image classification or transformers for natural language processing. Often, the weights are optimized using the Adam algorithm, a momentum-based modification of gradient descent. In the vanishing step-size limit, these momentum-based algorithms can be described as second-order damped dynamics with a time-dependent Hamiltonian interpretation.
-In this talk, I will gently introduce the cocontact / conformally symplectic geometry behind time-dependent Hamiltonian systems and show how viewing momentum-based methods in machine learning through this geometric lens can help elucidate their properties and aid in designing new momentum-based optimization algorithms on infinite-dimensional manifolds of probability measures."
+              Gradient-based optimization algorithms are indispensable for most modern machine learning applications, since they are used to train convolutional neural networks (CNNs) for image classification or transformers for natural language processing. Often, the weights are optimized using the Adam algorithm, a momentum-based modification of gradient descent. In the vanishing step-size limit, these momentum-based algorithms can be described as second-order damped dynamics with a time-dependent Hamiltonian interpretation.
+              In this talk, I will gently introduce the cocontact / conformally symplectic geometry behind time-dependent Hamiltonian systems and show how viewing momentum-based methods in machine learning through this geometric lens can help elucidate their properties and aid in designing new momentum-based optimization algorithms on infinite-dimensional manifolds of probability measures.
             </p>
           </div>
 
           <h3 id="fri-1400">14:00–14:30</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="GeorgiMitsov">Interface Problems</h3>
             <h4>Georgi Mitsov — Expository Talk</h4>
             <p><span class="badge badge-info">Area: Numerics</span></p>
@@ -537,7 +491,7 @@ In this talk, I will gently introduce the cocontact / conformally symplectic geo
           </div>
 
           <h3 id="fri-1430">14:30–15:00</h3>
-          <div id="zama">
+          <div class="talk-block">
             <h3 id="RobinChemnitz">Mixing in Fluids -- The Batchelor Scale</h3>
             <h4>Robin Chemnitz — Research Talk</h4>
             <p><span class="badge badge-info">Area: Stochastics</span></p>
@@ -579,3 +533,4 @@ In this talk, I will gently introduce the cocontact / conformally symplectic geo
     </script>
   </body>
 </html>
+```
