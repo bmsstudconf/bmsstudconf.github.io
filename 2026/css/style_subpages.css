@@ -5,6 +5,10 @@ background-color :#EBDDC6ff;
 body {
   padding-top: 80px;
 }
+.badge-info {
+  background-color: #CF188F !important;
+  color: white;
+}
 
 .navbar-brand {
   padding: 0px;
