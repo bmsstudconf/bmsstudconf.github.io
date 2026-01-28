@@ -8,13 +8,108 @@
     <meta name="author" content="2026 BMS Student Conference organizers">
     <link rel="icon" href="../imgs/BMS-logo.png">
 
-    <title>Talks</title>
+    <title>Schedule</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+  <!-- Custom styles for this template -->
     <link href="css/style_subpages.css" rel="stylesheet">
+    <style>
+table{
+  border-collapse: separate;
+}
+/* Style all rows: entries are centered */
+tr:nth-child(1n) {
+  text-align: center;
+}
+/* Make the first talk in each session stand out more clearly,
+      to prevent all talks from melding to a giant mish-mash. */
+      /*
+      tr:nth-child(4), tr:nth-child(7), tr:nth-child(12), tr:nth-child(15) {
+        background-color:#F597DA;
+      }*/
+      /* The first row is the title row, hence styled differently. */
+      /*tr:nth-child(1) {
+          background-color: #502A34;
+          color: white;
+          text-align: left;
+}*/
+
+
+/* Style the columns: the first is the title column. */
+td:nth-child(1) {
+          width: 15%;
+          background-color: #603140;
+          color: white;
+      }
+      td:not(:first-child) {
+        width: 29%;
+      }
+      
+/* Finally, define a special style for the rows contains special events
+(coffee breaks, lunch breaks, invited talks and the social events). */
+      #coffee_break1, #coffee_break2 {
+          background-color: #6F4E37;
+        color: white;
+      }
+      #lunch {
+        background-color: #CF188F;
+        color: white;
+      }
+
+      #invited_speaker1, #invited_speaker2 {
+        background-color: #EE7733;
+        color: white;
+      }
+      
+      #social_event {
+        background-color:  #52be80;
+        color: white;
+      }
+
+      #career_event {
+        background-color:  #bb8fce;
+        color: white;
+      }
+      
+      #wine_and_cheese {
+        /* last year: social event in green, W&C in red */
+        background-color:  #cd6155 ;
+        color: white;
+      }
+      
+      #registration1, #registration2, #introduction {
+        background-color: #866D56;
+        color: white;
+      }
+      
+      a:link {
+        color: #005158;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:visited {
+        color: #005158;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color: #c50e1f;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      
+      a:active {
+        color: #FACC2E;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      
+
+</style>
   </head>
 
   <body>
@@ -81,6 +176,9 @@
           </p>
           <hr>
 
+
+           <div class="row">
+        <div class="col-md-12">
           <table style="width:100%">
   <tr>
     <th></th>
